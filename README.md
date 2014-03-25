@@ -1,7 +1,7 @@
 left-handed-keyboard
 ====================
 
-I broke my primary wrist; I needed a way to use emacs without using it.
+I broke my primary wrist; I needed a way to use emacs without my right hand.
 
 This repository contains the Arduino code and Xkb keyboard map
 I created for typing with only my left hand on the left side of my keyboard.
