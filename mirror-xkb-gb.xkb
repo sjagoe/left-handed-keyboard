@@ -3,7 +3,7 @@ xkb_keymap {
   xkb_types     { include "complete"      };
   xkb_compat    { include "complete"      };
   xkb_symbols {
-    include "pc+gb+inet(evdev)"
+    include "pc+gb+inet(evdev)+ctrl(nocaps)"
     key <RWIN> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
     key <TLDE> {	[	grave,	notsign,	BackSpace	]	};
     key <SPCE> {	[	space,	space,		Return		] };
