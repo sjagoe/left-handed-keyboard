@@ -12,13 +12,13 @@ xkb_keymap {
     key <AE02> {	[	2,    quotedbl,	minus,	underscore	] };
     key <AE03> {	[	3,    sterling,	0,	parenright	] };
     key <AE04> {	[	4,    dollar,	9,	parenleft	] };
-    key <AE05> {	[	5,    percent,	8,	multiply	] };
+    key <AE05> {	[	5,    percent,	8,	asterisk	] };
     key <AE06> {	[	6,    asciicircum,	7,	ampersand	] };
     key <AE07> {	[	7,    ampersand,	6,	asciicircum	] };
-    key <AE08> {	[	8,    multiply,	5,	percent	] };
+    key <AE08> {	[	8,    asterisk,	5,	percent	] };
     key <AE09> {	[	9,    parenleft,	4,	dollar	] };
     key <AE10> {	[	0,    parenright,	3,	sterling	] };
-    key <AE11> {	[	minus,    sterling,	2,	quotedbl	] };
+    key <AE11> {	[	minus,    underscore,	2,	quotedbl	] };
     key <AE12> {	[	equal,    plus,	1,	exclam	] };
 
     key <AD01> {	[	  q,	Q,	p,	P 		]	};
