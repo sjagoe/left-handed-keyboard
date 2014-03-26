@@ -5,8 +5,8 @@ xkb_keymap {
   xkb_symbols {
     include "pc+gb+inet(evdev)+ctrl(nocaps)"
     key <RWIN> { type[Group1] = "ONE_LEVEL", symbols[Group1] = [ ISO_Level3_Shift ] };
-    key <TLDE> {	[	grave,	notsign,	BackSpace	]	};
-    key <SPCE> {	[	space,	space,		Return		] };
+    key <TLDE> {	[	grave,	notsign,	BackSpace,	BackSpace	]	};
+    key <SPCE> {	[	space,	space,		Return,	Return	] };
 
     key <AE01> {	[	1,    exclam,	equal,	plus	] };
     key <AE02> {	[	2,    quotedbl,	minus,	underscore	] };
