@@ -10,17 +10,47 @@
 #define PEDAL_3_KEY KEY_LEFT_ALT
 #define PEDAL_4_KEY KEY_RIGHT_GUI
 
+static uint8_t current_mode = 0;
+
+static const uint8_t[][] pedal_keys = {
+  {KEY_LEFT_CTRL},
+  {KEY_LEFT_SHIFT},
+  {KEY_LEFT_ALT},
+  {KEY_RIGHT_GUI},
+};
+
+
+const uint8_t key_for_mode (const uint8_t input_pin, const uint8_t mode) {
+  const uint8_t key;
+  switch (input_pin) {
+    case PEDAL_1:
+      key = pedal_keys[0][mode];
+      break;
+    case PEDAL_2:
+      key = pedal_keys[1][mode];
+      break;
+    case PEDAL_3:
+      key = pedal_keys[2][mode];
+      break;
+    case PEDAL_4:
+      key = pedal_keys[3][mode];
+      break;
+  };
+  return key;
+}
+
 
 class Pedal {
   private:
     Bounce debouncer;
     uint8_t pin;
-    uint8_t key;
+    const uint8_t key;
     uint8_t pressed;
   public:
     Pedal(uint8_t input_pin, uint8_t output_key, uint8_t pressed_val);
     void initialize();
     void update_state();
+    void set_mode(uint8_t mode);
 };
 
 
@@ -32,7 +62,7 @@ Pedal::Pedal(uint8_t input_pin, uint8_t output_key, uint8_t pressed_val) : debou
 
 
 void Pedal::initialize() {
-  // make pins input and turn on the 
+  // make pins input and turn on the
   // pullup resistors so they go high unless
   // connected to ground:
   pinMode(this->pin, INPUT_PULLUP);
@@ -76,11 +106,3 @@ void loop() {
   pedal_3.update_state();
   pedal_4.update_state();
 }
-
-
-
-
-
-
-
-
