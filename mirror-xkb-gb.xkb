@@ -45,8 +45,10 @@ xkb_keymap {
     key <AC07> {	[	  j,	J,	f,	F		]	};
     key <AC08> {	[	  k,	K,	d,	D		]	};
     key <AC09> {	[	  l,	L,	s,	S		]	};
+    key <AC10> {	[	  semicolon,	colon,	a,	A		]	};
+    key <AC11> {	[	  apostrophe, at, backslash,        bar		]	};
 
-    // key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
+    key <BKSL>	{ [numbersign, asciitilde,   numbersign, asciitilde ]	};
     key <LSGT>	{ [ backslash,        bar,          numbersign,    asciitilde ]	};
     key <AB01> {	[	  z,	Z,	slash,		question		]	};
     key <AB02> {	[	  x,	X,	period,		greater		]	};
